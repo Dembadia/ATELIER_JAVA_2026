@@ -1,29 +1,165 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-<title>Java</title>
-<meta charset="UTF-8">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java - Exercices de programmation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .user-name {
+            font-weight: 600;
+            color: #ffd700;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .exercises-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .exercises-list li {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .exercises-list li:hover {
+            background: #e8ebf5;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+        
+        .exercises-list a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        
+        .exercises-list a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+        
+        .exercise-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .exercise-label {
+            color: #555;
+        }
+        
+        .arrow {
+            color: #764ba2;
+            font-weight: bold;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
-<body bgcolor=white>
-
-<table border="0">
-<tr>
-<td>
-</td>
-<td>
-<h1>Exercices de programmation en JSP (Java)</h1>
-<p>Ceci est votre page d'exercices Java : Nom Prénom
-</td>
-</tr>
-</table>
-<h2>Liste de vos exercices</h2>
-<p>
-<ol>
-<li>Série d'exercices sur les boucles : <a href="lesboucles.jsp"> Les boucles</a>
-<li>Série d'exercices sur les conditions : <a href="lesconditions.jsp"> Les conditions</a>
-<li>Série d'exercices sur les chaines de caractères : <a href="leschaines.jsp"> Les String</a>
-<li>Série d'exercices sur les tableaux : <a href="lestableaux.jsp"> Les tableaux</a>
-</ol>
-
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Exercices de Programmation</h1>
+            <p>Bienvenue <span class="user-name">Demba FC3</span></p>
+            <p>Progressez à travers les différentes séries d'exercices Java</p>
+        </div>
+        
+        <div class="content">
+            <h2 class="section-title">📚 Liste de vos exercices</h2>
+            <ol class="exercises-list">
+                <li>
+                    <div class="exercise-item">
+                        <span class="exercise-label">Série d'exercices sur les boucles</span>
+                        <a href="lesboucles.jsp" class="arrow">→ Les boucles</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="exercise-item">
+                        <span class="exercise-label">Série d'exercices sur les conditions</span>
+                        <a href="lesconditions.jsp" class="arrow">→ Les conditions</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="exercise-item">
+                        <span class="exercise-label">Série d'exercices sur les chaînes de caractères</span>
+                        <a href="leschaines.jsp" class="arrow">→ Les String</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="exercise-item">
+                        <span class="exercise-label">Série d'exercices sur les tableaux</span>
+                        <a href="lestableaux.jsp" class="arrow">→ Les tableaux</a>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="footer">
+            <p>✨ Bon courage dans votre apprentissage du Java ! ✨</p>
+        </div>
+    </div>
 </body>
 </html>
-
